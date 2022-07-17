@@ -1,0 +1,41 @@
+Hello! :slightly_smiling_face: Łapcie obiecane wyzwanie :slightly_smiling_face: Deadline 15.07.2022. Natomiast im wczesniej zrobicie tym lepiej :slightly_smiling_face: Zrobione prace domowe wrzućcie na githuba, a linki podeslijcie swoim mentorom. Zrobimy Wam code review i będziemy chcieli również potem sprawdzić jak poprawiliście kod po sprawdzeniu przez mentorów :slightly_smiling_face: Powodzonka! W razie pytań lub watpliwości co do treści zadania piszcie do mnie :stuck_out_tongue:
+
+Praca domowa wytyczne:
+
+link do API: https://rickandmortyapi.com/
+
+Skille wymagane do ukończenia projektu to:
+
+- create-react-app
+- jsx
+- przekazywanie propsów
+- useState
+- useEffect
+- component composition
+
+1. Stwórz nową aplikacje Reactową,
+2. Aplikacja powinna zawierać takie moduły jak:
+   OK- a) Nawigacje - Menu na gorze strony które powinno wygladać na wzór tego co na screenie nr1.
+   Po lewej stronie powinno zawierać napis "Logo", który powinien być stanem w pliku App.js i przekazany propsem do komponentu nawigacji. Po prawej stronie powinniśmy mieć 4 itemy do przełączenia na inne strony: O mnie, Lista postaci, Todo, Kontakt.
+   OK - b) Strona 'O mnie' - powinna zawierać komponent wyświetlający zdjecie(obojetne jakie) i imię nazwisko oraz opis Twojej osoby,
+   c) Strona 'Lista Postaci' - strona na której wyświetlimy 1 strone list postaci z Rick and Morty w formie kart postaci na ktorych bedzie zdjecie postaci i przynajmniej dwie cechy danej postaci,
+   OK - d) Strona 'Lista Todo' - na samej górze strony powinien znajdować się input oraz
+   przycisk. Po wpisaniu wartosci do inputa i kliknieciu na przycisk powinnismy
+   dodać to co wpisalismy do listy i wyswietlac te wartosc pod przyciskiem i inputem,
+   \*) Nalezy tutaj również dodać możliwość usuniecia elementu z listy po kliknieciu na dany element,
+   OK - e) Wewnatrz komponentu TODO stwórz jeszcze jeden komponent w którym będzie pojedynczy button zmieniający stan napisu "Logo" na "Nowe logo", a
+   jesli aktualnie jest napis "Nowe logo" to niech zmienia na napis "Logo".
+   (chodzi tutaj o zmianę stanu w rodzicu z komponentu dziecka)
+   OK - f) Strona kontakt powinna wyświetlać formularz z inputem na maila i drugim inputem do tresci oraz przycisk wyslij. Po wpisaniu wartosci w pola inputów zapisujemy dane do stanu(stan powinien byc obiektem) i przyciskiem wyslij powinnismy te dane wyswietlic pod formularzem,
+   OK - g) Do obecnego tekstu "Logo" lub "Nowe logo" powinniśmy móc dodać dodatkowy tekst.
+   Input oraz button potrzebny do tego zróbmy wewnątrz komponentu o mnie :) jako dodatkowy blok na dole strony,
+
+Porady:
+
+1. Zmiana stron ma opierać się na zmianie stanu za pomocą useState,
+2. Do układania elementów używaj flexboxa ale nie skupiamy sie mocno na stylach, a bardziej na funkcjonalnosci,
+3. W pliku App.js powinnismy miec tylko komponenty zawierające pełne strony, czyli
+   nie wrzucamy tam luznego kodu, komponenty maja byc tam zaimportowane i stworzone w innych plikach, (jedynie powinien tam być stan tworzący napis "Logo")
+4. Komponent O mnie powinnien otrzymywać dane takie jak src do obrazka oraz imie nazwisko i opis za pomoca propsa, a nie był zadeklarowany w komponencie,
+
+Skupcie się na przećwiczeniu budowania struktury komponentu, rozbijajcie to co sie da na mniejsze komponenty i umieszczajcie w wiekszych komponentach, korzystajcie z useState oraz useEffect o ile jest taka koniecznosc.

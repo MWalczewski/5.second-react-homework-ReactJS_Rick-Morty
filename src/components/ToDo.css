@@ -1,0 +1,26 @@
+.to-do-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-containter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.text-input {
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  background-color: turquoise;
+  border: 2px solid orange;
+}
+
+.button {
+  width: 200px;
+  height: 30px;
+  background-color: turquoise;
+  border: 2px solid orange;
+}

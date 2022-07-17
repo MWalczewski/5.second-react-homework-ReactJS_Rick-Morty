@@ -1,0 +1,43 @@
+.about-me-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.about-me-image {
+  width: 50%;
+}
+.update-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-logo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.update-logo-input {
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  border: 2px solid orange;
+}
+::placeholder {
+  padding-left: 5px;
+}
+
+.update-logo-button {
+  width: 200px;
+  height: 30px;
+  background-color: turquoise;
+  border: 2px solid orange;
+}
