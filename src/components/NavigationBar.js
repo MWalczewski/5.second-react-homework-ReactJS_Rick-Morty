@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import NavigationButtons from "./NavigationButtons";
 
 const NavigationBar = ({ logo, clickedButton, setClickedButton }) => {

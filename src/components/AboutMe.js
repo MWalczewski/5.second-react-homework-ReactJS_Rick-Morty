@@ -21,7 +21,7 @@ const AboutMe = ({ aboutMeData, picture, logo, setLogo }) => {
   return (
     <div className="about-me-page">
       <span className="about-me-container">
-        <img className="about-me-image" src={picture} alt="picture" />
+        <img className="about-me-image" src={picture} alt="randomPicture" />
         <h4>
           Nazywam się {firstName} {lastName}.
         </h4>
@@ -33,6 +33,7 @@ const AboutMe = ({ aboutMeData, picture, logo, setLogo }) => {
           <input
             className="update-logo-input"
             value={inputText}
+            maxLength="20"
             onChange={textToAddToLogo}
             placeholder="write text to add to input"
           ></input>

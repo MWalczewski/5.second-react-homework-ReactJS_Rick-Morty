@@ -1,6 +1,6 @@
 import buttonNames from "./NavigationButtonsNames";
 
-const NavigationButtons = ({ clickedButton, setClickedButton }) => {
+const NavigationButtons = ({ setClickedButton }) => {
   const NaviButtonClick = (event) => {
     setClickedButton(event.target.name.toString());
   };

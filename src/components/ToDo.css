@@ -23,4 +23,5 @@
   height: 30px;
   background-color: turquoise;
   border: 2px solid orange;
+  cursor: pointer;
 }

@@ -35,9 +35,14 @@ const ToDo = ({ logo, setLogo }) => {
         <input
           className="text-input"
           value={inputText}
+          maxLength="20"
           onChange={newToDoItem}
         ></input>
-        <button onClick={addInputToToDo} className="button">
+        <button
+          onClick={addInputToToDo}
+          className="button"
+          disabled={!inputText}
+        >
           Add to the To Do List
         </button>
       </form>

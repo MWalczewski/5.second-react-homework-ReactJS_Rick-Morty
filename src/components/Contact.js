@@ -11,10 +11,6 @@ const Contact = () => {
     email: "",
   });
 
-  const displayValues = (event) => {
-    event.preventDefault();
-  };
-
   const onSubmit = (e) => {
     e.preventDefault();
     setForm({
@@ -43,13 +39,10 @@ const Contact = () => {
             className="text-input"
             value={form.text}
             name="text"
+            maxLength="30"
             onChange={updateValue}
           />
-          <label
-            onSubmit={displayValues}
-            for="text-input"
-            className="input-label"
-          >
+          <label for="text-input" className="input-label">
             Text
           </label>
         </div>
@@ -58,6 +51,8 @@ const Contact = () => {
             className="email-input"
             value={form.email}
             name="email"
+            type="email"
+            maxLength="40"
             onChange={updateValue}
           />
           <label for="email-input" className="input-label">
@@ -65,7 +60,12 @@ const Contact = () => {
           </label>
         </div>
 
-        <button onClick={passData} className="display-button">
+        <button
+          onClick={passData}
+          className="display-button"
+          // disabled={form.text.length === 0 || form.email.length === 0}
+          disabled={!form.email || !form.text || !form.email.includes("@")}
+        >
           Display
         </button>
       </form>

@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import "./CharactersList.css";
 
+const BASE_URL = "https://rickandmortyapi.com/api/character?page=1";
+
 const CharList = () => {
   const [chars, setChars] = useState([]);
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character?page=1")
+    fetch(BASE_URL)
       .then((resp) => resp.json())
-      .then((json) => setChars(json.results));
-  });
+      .then((json) => setChars(json.results))
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }, []);
 
   return (
     <div className="char-page">
